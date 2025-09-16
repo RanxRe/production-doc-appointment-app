@@ -3,11 +3,11 @@ const doctorModel = require("../models/doctorModels");
 
 const getAllUsersController = async (req, res) => {
   try {
-    console.log("In getAllUsersController");
+    // console.log("In getAllUsersController");
     // Disable cache explicitly
     res.setHeader("Cache-Control", "no-store");
     const users = await userModel.find({});
-    console.log("fetched users", users);
+    // console.log("fetched users", users);
     res.status(200).send({
       success: true,
       message: "Fetched user list sucessfully",
