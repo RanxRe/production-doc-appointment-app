@@ -3,7 +3,7 @@ const doctorModel = require("../models/doctorModels");
 const appointmentModel = require("../models/appointmentModels");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const { add15MinutestoTime } = require("../client/src/utils/timeUtils");
+const { add15MinutestoTime } = require("../utils/timeUtils");
 
 //register callback
 const registerController = async (req, res) => {
